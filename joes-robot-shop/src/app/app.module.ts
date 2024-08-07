@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { CatalogComponent } from './catalog/catalog.component';
 import { SiteHeaderComponent } from '_course-resources/site-header/site-header.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import { SiteHeaderComponent } from '_course-resources/site-header/site-header.c
     HomeComponent,
     CatalogComponent,
     SiteHeaderComponent,
+    ProductDetailsComponent,
   ],
   imports: [BrowserModule],
   providers: [],

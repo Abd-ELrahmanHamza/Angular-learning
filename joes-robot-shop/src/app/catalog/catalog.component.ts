@@ -186,9 +186,6 @@ export class CatalogComponent {
     ];
   }
 
-  getImageUrl(product: IProduct): string {
-    return `/assets/images/robot-parts/${product.imageName}`;
-  }
 
   getFilteredProducts(): IProduct[] {
     return this.filter === ''
