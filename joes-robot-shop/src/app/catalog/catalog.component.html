@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="filters">
+    <a class="button">Heads</a>
+    <a class="button">Arms</a>
+    <a class="button">Torsos</a>
+    <a class="button">Bases</a>
+    <a class="button">All</a>
+  </div>
+
+  <ul class="products">
+    <li class="product-item">
+      <div class="product">
+        <div class="product-details">
+          <img [src]="getImageUrl(product)" [alt]="product.name" />
+          <div class="product-info">
+            <div class="name">{{ product.name }}</div>
+            <div class="description">{{ product.description }}</div>
+            <div class="category">Part Type: {{ product.category }}</div>
+          </div>
+        </div>
+        <div class="price">
+          <div>${{ product.price.toFixed(2) }}</div>
+          <button class="cta">Buy</button>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
