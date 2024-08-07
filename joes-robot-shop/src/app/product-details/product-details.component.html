@@ -14,6 +14,6 @@
     <div class="discount" *ngIf="product.discount > 0">
       {{ product.price * (1 - product.discount) | currency : "USD" }}
     </div>
-    <button class="cta">Buy</button>
+    <button class="cta" (click)="buyButtonClicked()">Buy</button>
   </div>
 </div>

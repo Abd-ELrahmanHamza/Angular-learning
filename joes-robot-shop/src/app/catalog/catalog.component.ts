@@ -8,6 +8,7 @@ import { IProduct } from './product.mode';
 export class CatalogComponent {
   products: IProduct[];
   filter: string = '';
+  cart: IProduct[] = [];
   constructor() {
     this.products = [
       {
@@ -186,10 +187,14 @@ export class CatalogComponent {
     ];
   }
 
-
   getFilteredProducts(): IProduct[] {
     return this.filter === ''
       ? this.products
       : this.products.filter((product) => product.category === this.filter);
+  }
+
+  addToCart(product: IProduct) {
+    this.cart.push(product);
+    console.log('added to cart', this.cart);
   }
 }
