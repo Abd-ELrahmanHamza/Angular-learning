@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { IProduct } from '../catalog/product.mode';
+import { IProduct } from '../catalog/product.model';
 
 @Component({
   selector: 'bot-product-details',
