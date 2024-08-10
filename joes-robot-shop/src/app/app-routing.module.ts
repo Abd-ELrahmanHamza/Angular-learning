@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { CatalogComponent } from './catalog/catalog.component';
 import { CartComponent } from './cart/cart.component';
 import { SignInComponent } from './user/sign-in/sign-in.component';
+import { TemplateFormControlsComponent } from './template-form-controls/template-form-controls.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent, title: "Home - Jos's robot shope" },
@@ -17,6 +18,11 @@ const routes: Routes = [
     path: 'sign-in',
     component: SignInComponent,
     title: "Sign in - Jos's robot shope",
+  },
+  {
+    path: 'forms',
+    component: TemplateFormControlsComponent,
+    title: "Forms - Jos's robot shope",
   },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];
