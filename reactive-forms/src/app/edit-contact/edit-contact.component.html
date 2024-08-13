@@ -1,0 +1,72 @@
+<div class="content">
+  <h1 class="header">Edit Contact</h1>
+  <form>
+    <section>
+      <nav>Name/Info</nav>
+      <div>
+        <input
+          placeholder="First Name"
+          name="firstName"
+          [formControl]="firstName"
+        />
+        <input
+          placeholder="Last Name"
+          name="lastName"
+          [formControl]="lastName"
+        />
+        <input
+          placeholder="Date of Birth"
+          name="dob"
+          [formControl]="dateOfBirth"
+        />
+        <input
+          placeholder="Favorites Ranking"
+          name="favoritesRanking"
+          [formControl]="favoritesRanking"
+        />
+      </div>
+    </section>
+    <section>
+      <nav>Phone</nav>
+      <div class="flex-column">
+        <div class="flex-group">
+          <input placeholder="Phone" name="phoneNumber" />
+          <img src="/assets/plus-grey-blue.png" class="add" />
+        </div>
+        <div class="radio">
+          <input type="radio" value="mobile" name="phoneType" />
+          Mobile
+          <input type="radio" value="work" name="phoneType" />
+          Work
+          <input type="radio" value="other" name="phoneType" />
+          Other
+        </div>
+      </div>
+    </section>
+    <section>
+      <nav>Address</nav>
+      <div>
+        <div class="address">
+          <div class="flex-group">
+            <input placeholder="Address" />
+            <img src="/assets/plus-grey-blue.png" class="add" />
+          </div>
+          <input placeholder="City" name="city" />
+          <input placeholder="State/Region" name="state" />
+          <input placeholder="Zip/Postal Code" name="postalCode" />
+          <select>
+            <option value="home">Home</option>
+            <option value="work">Work</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+      </div>
+    </section>
+    <div class="buttons">
+      <button class="secondary" type="button">Cancel</button>
+      <button class="primary" type="submit" (click)="saveContact()">
+        Save
+      </button>
+    </div>
+  </form>
+</div>
